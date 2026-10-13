@@ -41,7 +41,7 @@ DiscoverCOSMOS，中文名“星际探索局”，是面向青少年的静态科
 
 package.json 没有 npm 依赖；无需 npm install 或 npm ci。npm test 只调用 bash verify.sh。线上网页也不需要 Python 或 Node 服务。
 
-2026-10-13 本地接手补充：当前 Mac 已有 Node.js v24.21.0，系统 Python/Git 因缺少 Xcode 命令行工具暂不可用。使用新增的 `npm start` 或 macOS `start.command` 即可预览，无需为了看网页安装 Python 或 Xcode。下一次启动流程见 [本地运行流程](docs/07-本地运行流程.md)。本次范围为本地运行与流程整理，Git 基线与外部发布尚未执行。
+2026-10-13 本地接手补充：当前 Mac 已有 Node.js v24.21.0，使用新增的 `npm start` 或 macOS `start.command` 即可预览，无需为了看网页安装 Python 或 Xcode。下一次启动流程见 [本地运行流程](docs/07-本地运行流程.md)。同日后续已安装 Apple 命令行工具并建立 Git 基线，同步与发布状态见 [GitHub 发布与维护](docs/08-GitHub发布与维护.md)。
 
 所有本地命令都在**本交付文件夹根目录**执行。先确认 pwd，并检查本目录是否已有 .git；不能误把父目录或用户其他文件纳入仓库。
 
