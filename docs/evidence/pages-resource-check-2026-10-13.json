@@ -1,0 +1,102 @@
+{
+  "base": "https://zhugexiaohang2-pixel.github.io/discover-cosmos/",
+  "checkedAt": "2026-10-13T12:25:39.999Z",
+  "resources": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "c0c1a85a3f4fdd48cfe80a0431021e46ce123698f341c90793be2c995d4cadd4",
+      "matchesLocal": true
+    },
+    {
+      "path": "style.css",
+      "status": 200,
+      "sha256": "b9d4b4a1ca663f10de8adb1f31f79317f97c828c55b1b9a07c56f7eba48a98e5",
+      "matchesLocal": true
+    },
+    {
+      "path": "app.js",
+      "status": 200,
+      "sha256": "78668b31d09d3dee1d4c03d5d1772f7a38685174d95f8de544b9b558f65e6485",
+      "matchesLocal": true
+    },
+    {
+      "path": "planets.js",
+      "status": 200,
+      "sha256": "6f17f5a0cc89898568496d8c94a693a5f58b1bb455ada5ad4c7e04884e30a72b",
+      "matchesLocal": true
+    },
+    {
+      "path": "planet-visuals.js",
+      "status": 200,
+      "sha256": "931c21cbdfb5010b65a58b29bcf15485a7659122cdea030e45d558668c58d965",
+      "matchesLocal": true
+    },
+    {
+      "path": "three-loader.js",
+      "status": 200,
+      "sha256": "e67669c8afd4657dc9ed48eb93746457cf20df5f5f817c3718a3010d8c6b66be",
+      "matchesLocal": true
+    },
+    {
+      "path": "vendor/three.module.js",
+      "status": 200,
+      "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495",
+      "matchesLocal": true
+    },
+    {
+      "path": "solar/index.html",
+      "status": 200,
+      "sha256": "5653cdef90ccaa96d82bd930b9e3ebaca7bf818388f9715bd821ce0caf5910ac",
+      "matchesLocal": true
+    },
+    {
+      "path": "solar/solar.css",
+      "status": 200,
+      "sha256": "d8b73ec428be38d04f8516b9b5fb3a2108f386dcb6d01adfc3d17dbed72b17c2",
+      "matchesLocal": true
+    },
+    {
+      "path": "solar/solar-app.js",
+      "status": 200,
+      "sha256": "daf8b4c3092c2fd1fa8f0e9bdd5ab18ff9788e025a66cb00737ec9e933721b50",
+      "matchesLocal": true
+    },
+    {
+      "path": "solar/render-check.html",
+      "status": 200,
+      "sha256": "81fd565b0b4f54af3397d424c06276900eafd0cf6a7fd9ed9af8d7f5a76f19bd",
+      "matchesLocal": true
+    },
+    {
+      "path": "solar/render-check.js",
+      "status": 200,
+      "sha256": "4ea800e89bbba171417d211720194ac228bf45a323bed357700b8ac90363b3df",
+      "matchesLocal": true
+    },
+    {
+      "path": "solar/rel.js",
+      "status": 200,
+      "sha256": "4f8abca6b2679f81b520c697925691e0d4d1df8e7049df548b48f0dfaa19c374",
+      "matchesLocal": true
+    },
+    {
+      "path": "solar/rendering.js",
+      "status": 200,
+      "sha256": "5ed9062f6a25edb9f79d5ca21e1d382bfc43bbfd2634e8d388cb8ece1ebbd979",
+      "matchesLocal": true
+    },
+    {
+      "path": "solar/shaders.js",
+      "status": 200,
+      "sha256": "df9a33689d2d5c2c6d30a72f7c53211928f09ee646d1076d9f3ac8b85abbfcf9",
+      "matchesLocal": true
+    },
+    {
+      "path": "solar/solarsystem.js",
+      "status": 200,
+      "sha256": "a3c664c157b23a50869226d7ab9c23cdc3963b0b66ca460282013a10de7f345b",
+      "matchesLocal": true
+    }
+  ]
+}

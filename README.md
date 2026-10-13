@@ -27,7 +27,7 @@
 
 ## 怎样查看网页
 
-**线上查看：** 本交付包还没有公开网址。接手 agent 完成 HANDOFF 中的 GitHub Pages 发布流程后，普通观众只需点击网址，不需要安装编程工具。
+**线上查看：** 打开 [星际图鉴](https://zhugexiaohang2-pixel.github.io/discover-cosmos/) 或 [太阳系飞行](https://zhugexiaohang2-pixel.github.io/discover-cosmos/solar/index.html)，无需安装编程工具。
 
 **本地查看：** 需要 Node.js 22+ 和支持 WebGL 的现代浏览器。macOS 可双击本文件夹中的 `start.command`，也可以在本文件夹的终端运行：
 
@@ -78,4 +78,4 @@ GitHub 发布时，网页内容来自 code/，不把整个交付目录当作网�
 
 本项目使用教学显示比例。相对论只作用于无限远星空；行星保持便于阅读和观察的几何显示。镜头飞行时长与 β 是演示参数，不能用来推算真实星际旅程。
 
-2026-10-13 已建立本地 Git 基线，并创建公开 GitHub 仓库；Actions 文件已配置，代码推送、远端运行和实际网页发布仍待完成。当前状态与维护步骤见 [GitHub 发布与维护](docs/08-GitHub发布与维护.md)。
+2026-10-13 已建立本地 Git 基线并同步到 [公开 GitHub 仓库](https://github.com/zhugexiaohang2-pixel/discover-cosmos)。GitHub Actions 的检查、构建与 Pages 部署均成功，线上真实 WebGL 检查 48/48 通过。main 更新且检查通过后会自动更新网页。证据与维护步骤见 [GitHub 发布与维护](docs/08-GitHub发布与维护.md)。

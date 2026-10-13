@@ -9,7 +9,15 @@
 - 提交署名使用用户确认的 GitHub 账号名及该账号设置中提供的隐私 noreply 邮箱，仅设置当前仓库。
 - Apple 命令行工具已安装完成，系统 Git 2.50.1 可用。首次基线使用临时安装的 isomorphic-git 1.44.2 创建标准 Git 对象，随后通过系统 Git 的 `git fsck --full` 核对；该临时工具没有加入 package.json，网页仍然没有安装依赖。
 - 工作流已放入 [.github/workflows/pages.yml](../.github/workflows/pages.yml)，模板保持同一逻辑。官方 Actions 主版本已核对并更新为 checkout/setup-node v7、configure-pages v6、upload-pages-artifact/deploy-pages v5。
-- [工作流结构证据](evidence/github-workflow-check-2026-10-13.txt) 只证明本地 YAML、检查门槛和权限结构通过；远端运行与公开网页尚待完成。
+- [工作流结构证据](evidence/github-workflow-check-2026-10-13.txt) 记录本地 YAML、检查门槛和权限结构。代码与历史已推送，Pages 发布源为 GitHub Actions，verify、build、deploy 均成功。
+
+## 已发布与验收
+
+网站入口为 [星际图鉴](https://zhugexiaohang2-pixel.github.io/discover-cosmos/) 和 [太阳系飞行](https://zhugexiaohang2-pixel.github.io/discover-cosmos/solar/index.html)。实际网址来自 GitHub Pages API。首次验收对应提交 `ad2bb0efc13221725be2c1c5ce878ddefbd7bf58`；后续文档与证据提交由同一工作流自动发布。
+
+首次运行的 verify 成功，build 因 Pages 尚未启用返回 404；启用 workflow 发布源后重跑失败任务成功，无需修改网页代码。见 [Actions 证据](evidence/pages-actions-2026-10-13.json) 和 [Pages 设置](evidence/pages-settings-2026-10-13.json)。
+
+线上首页显示八张卡牌；普通太阳系显示星空、太阳、轨道和标签，地球约 20 秒飞行完成后球体持续可见，β 回到 0，演示 Δτ 为 13.4 秒。进入地球阅读页并刷新深链接正常。Codex 内置 Chromium（Chrome/155.0.0.0）在实际线上 `/solar/render-check.html` 通过 48/48 项，0 项失败；页面和检查页没有新的控制台错误。见 [线上检查结果](evidence/pages-browser-check-2026-10-13.txt)、[检查截图](evidence/pages-browser-check-2026-10-13.png)、[地球抵达截图](evidence/pages-earth-2026-10-13.png)。覆盖范围为当前桌面 Chromium，未完成 Safari/Firefox、真实手机、低端 GPU 和长时间性能专项。
 
 ## 发布流程
 

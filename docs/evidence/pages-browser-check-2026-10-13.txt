@@ -1,0 +1,138 @@
+- heading "浏览器回归检查" [level=1]
+- status: PASS：48/48 项浏览器检查通过；0 项失败。
+- paragraph: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36
+- link "下载检查结果 JSON":
+  - /url: data:application/json;charset=utf-8,%7B%0A%20%20%22count%22%3A%2048%2C%0A%20%20%22fail%22%3A%200%2C%0A%20%20%22userAgent%22%3A%20%22Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F155.0.0.0%20Safari%2F537.36%22%2C%0A%20%20%22executedAt%22%3A%20%222026-10-13T12%3A22%3A20.344Z%22%2C%0A%20%20%22results%22%3A%20%5B%0A%20%20%20%20%22PASS%20%CE%B2%3D0%20GPU%20%E4%B8%96%E7%95%8C%E6%96%B9%E5%90%91%20(128%2C128)%22%2C%0A%20%20%20%20%22PASS%20%CE%B2%3D0%20GPU%20%E4%B8%96%E7%95%8C%E6%96%B9%E5%90%91%20(16%2C16)%22%2C%0A%20%20%20%20%22PASS%20%CE%B2%3D0%20GPU%20%E4%B8%96%E7%95%8C%E6%96%B9%E5%90%91%20(239%2C239)%22%2C%0A%20%20%20%20%22PASS%20%E5%85%B3%E9%97%AD%E7%9B%B8%E5%AF%B9%E8%AE%BA%E4%B8%8E%20%CE%B2%3D0%20%E9%80%90%E5%83%8F%E7%B4%A0%E4%B8%80%E8%87%B4%22%2C%0A%20%20%20%20%22PASS%20%E6%97%8B%E8%BD%AC%E7%9B%B8%E6%9C%BA%E5%90%8E%E4%BB%8D%E9%87%87%E6%A0%B7%E6%AD%A3%E7%A1%AE%E4%B8%96%E7%95%8C%E6%96%B9%E5%90%91%22%2C%0A%20%20%20%20%22PASS%20%E5%89%8D%E5%90%91%20%CE%B2%3D0.6%20%E8%93%9D%E7%A7%BB%E5%A2%9E%E4%BA%AE%EF%BC%8C%E6%B2%A1%E6%9C%89%E5%8F%8D%E6%88%90%E5%90%8E%E5%90%91%E7%BA%A2%E7%A7%BB%22%2C%0A%20%20%20%20%22PASS%20GPU%20%E5%AE%8C%E6%95%B4%E9%80%86%20boost%EF%BC%8C%E8%BF%90%E5%8A%A8%E8%BD%B4%200%2C0%2C-1%EF%BC%8C%E5%83%8F%E7%B4%A0%20(16%2C32)%22%2C%0A%20%20%20%20%22PASS%20GPU%20%E5%AE%8C%E6%95%B4%E9%80%86%20boost%EF%BC%8C%E8%BF%90%E5%8A%A8%E8%BD%B4%200%2C0%2C-1%EF%BC%8C%E5%83%8F%E7%B4%A0%20(128%2C128)%22%2C%0A%20%20%20%20%22PASS%20GPU%20%E5%AE%8C%E6%95%B4%E9%80%86%20boost%EF%BC%8C%E8%BF%90%E5%8A%A8%E8%BD%B4%200%2C0%2C-1%EF%BC%8C%E5%83%8F%E7%B4%A0%20(239%2C220)%22%2C%0A%20%20%20%20%22PASS%20GPU%20%E5%AE%8C%E6%95%B4%E9%80%86%20boost%EF%BC%8C%E8%BF%90%E5%8A%A8%E8%BD%B4%201%2C2%2C-3%EF%BC%8C%E5%83%8F%E7%B4%A0%20(16%2C32)%22%2C%0A%20%20%20%20%22PASS%20GPU%20%E5%AE%8C%E6%95%B4%E9%80%86%20boost%EF%BC%8C%E8%BF%90%E5%8A%A8%E8%BD%B4%201%2C2%2C-3%EF%BC%8C%E5%83%8F%E7%B4%A0%20(128%2C128)%22%2C%0A%20%20%20%20%22PASS%20GPU%20%E5%AE%8C%E6%95%B4%E9%80%86%20boost%EF%BC%8C%E8%BF%90%E5%8A%A8%E8%BD%B4%201%2C2%2C-3%EF%BC%8C%E5%83%8F%E7%B4%A0%20(239%2C220)%22%2C%0A%20%20%20%20%22PASS%20%E5%90%8E%E5%90%91%20%CE%B2%3D0.6%20%E7%BA%A2%E7%A7%BB%E5%8F%98%E6%9A%97%22%2C%0A%20%20%20%20%22PASS%20%E5%AE%9E%E9%99%85%20Scene%20pass%20%E8%83%8C%E6%99%AF%E9%80%8F%E6%98%8E%E3%80%81%E5%AE%9E%E4%BD%93%E4%B8%8D%E9%80%8F%E6%98%8E%22%2C%0A%20%20%20%20%22PASS%20%E6%9C%89%E9%99%90%E8%B7%9D%E7%A6%BB%E5%AE%9E%E4%BD%93%E5%9C%A8%20%CE%B2%3D0.98%20%E4%BB%8D%E5%8F%AF%E8%BE%A8%E8%AE%A4%22%2C%0A%20%20%20%20%22PASS%20%E7%9C%9F%E5%AE%9E%20shader%20%E4%B8%8E%20framebuffer%20%E6%97%A0%20WebGL%20%E9%94%99%E8%AF%AF%22%2C%0A%20%20%20%20%22PASS%20%E5%AE%9E%E9%99%85%20HUD%20%E4%B8%80%E7%A8%8B%E5%8F%82%E8%80%83%E4%B8%8B%E9%99%90%E4%B8%BA%2037.29%20%E5%88%86%E9%92%9F%22%2C%0A%20%20%20%20%22PASS%20%E5%AE%9E%E9%99%85%E9%A1%B5%E9%9D%A2%E6%98%9F%E7%A9%BA%E7%AB%8B%E6%96%B9%E4%BD%93%E5%8C%85%E5%90%AB%E9%9D%9E%E9%9B%B6%E5%83%8F%E7%B4%A0%22%2C%0A%20%20%20%20%22PASS%20%E5%AE%9E%E9%99%85%E9%A1%B5%E9%9D%A2%E4%B8%BB%E5%9C%BA%E6%99%AF%E5%8C%85%E5%90%AB%E5%AE%9E%E4%BD%93%22%2C%0A%20%20%20%20%22PASS%20mercury%20%E6%8A%B5%E8%BE%BE%E5%90%8E%E5%B1%85%E4%B8%AD%E3%80%81%E7%94%BB%E9%9D%A2%E5%8D%A0%E6%AF%94%E7%BA%A6%2025%25%22%2C%0A%20%20%20%20%22PASS%20mercury%20%E9%A3%9E%E8%A1%8C%E4%B8%8E%E7%8E%AF%E7%BB%95%E4%BA%A4%E6%8E%A5%E8%BF%9E%E7%BB%AD%22%2C%0A%20%20%20%20%22PASS%20mercury%20%E6%8A%B5%E8%BE%BE%E4%B8%8E%E5%81%9C%E7%95%99%E6%8C%81%E7%BB%AD%E6%B8%B2%E6%9F%93%22%2C%0A%20%20%20%20%22PASS%20venus%20%E6%8A%B5%E8%BE%BE%E5%90%8E%E5%B1%85%E4%B8%AD%E3%80%81%E7%94%BB%E9%9D%A2%E5%8D%A0%E6%AF%94%E7%BA%A6%2025%25%22%2C%0A%20%20%20%20%22PASS%20venus%20%E9%A3%9E%E8%A1%8C%E4%B8%8E%E7%8E%AF%E7%BB%95%E4%BA%A4%E6%8E%A5%E8%BF%9E%E7%BB%AD%22%2C%0A%20%20%20%20%22PASS%20venus%20%E6%8A%B5%E8%BE%BE%E4%B8%8E%E5%81%9C%E7%95%99%E6%8C%81%E7%BB%AD%E6%B8%B2%E6%9F%93%22%2C%0A%20%20%20%20%22PASS%20earth%20%E6%8A%B5%E8%BE%BE%E5%90%8E%E5%B1%85%E4%B8%AD%E3%80%81%E7%94%BB%E9%9D%A2%E5%8D%A0%E6%AF%94%E7%BA%A6%2025%25%22%2C%0A%20%20%20%20%22PASS%20earth%20%E9%A3%9E%E8%A1%8C%E4%B8%8E%E7%8E%AF%E7%BB%95%E4%BA%A4%E6%8E%A5%E8%BF%9E%E7%BB%AD%22%2C%0A%20%20%20%20%22PASS%20earth%20%E6%8A%B5%E8%BE%BE%E4%B8%8E%E5%81%9C%E7%95%99%E6%8C%81%E7%BB%AD%E6%B8%B2%E6%9F%93%22%2C%0A%20%20%20%20%22PASS%20mars%20%E6%8A%B5%E8%BE%BE%E5%90%8E%E5%B1%85%E4%B8%AD%E3%80%81%E7%94%BB%E9%9D%A2%E5%8D%A0%E6%AF%94%E7%BA%A6%2025%25%22%2C%0A%20%20%20%20%22PASS%20mars%20%E9%A3%9E%E8%A1%8C%E4%B8%8E%E7%8E%AF%E7%BB%95%E4%BA%A4%E6%8E%A5%E8%BF%9E%E7%BB%AD%22%2C%0A%20%20%20%20%22PASS%20mars%20%E6%8A%B5%E8%BE%BE%E4%B8%8E%E5%81%9C%E7%95%99%E6%8C%81%E7%BB%AD%E6%B8%B2%E6%9F%93%22%2C%0A%20%20%20%20%22PASS%20jupiter%20%E6%8A%B5%E8%BE%BE%E5%90%8E%E5%B1%85%E4%B8%AD%E3%80%81%E7%94%BB%E9%9D%A2%E5%8D%A0%E6%AF%94%E7%BA%A6%2025%25%22%2C%0A%20%20%20%20%22PASS%20jupiter%20%E9%A3%9E%E8%A1%8C%E4%B8%8E%E7%8E%AF%E7%BB%95%E4%BA%A4%E6%8E%A5%E8%BF%9E%E7%BB%AD%22%2C%0A%20%20%20%20%22PASS%20jupiter%20%E6%8A%B5%E8%BE%BE%E4%B8%8E%E5%81%9C%E7%95%99%E6%8C%81%E7%BB%AD%E6%B8%B2%E6%9F%93%22%2C%0A%20%20%20%20%22PASS%20saturn%20%E6%8A%B5%E8%BE%BE%E5%90%8E%E5%B1%85%E4%B8%AD%E3%80%81%E7%94%BB%E9%9D%A2%E5%8D%A0%E6%AF%94%E7%BA%A6%2025%25%22%2C%0A%20%20%20%20%22PASS%20saturn%20%E9%A3%9E%E8%A1%8C%E4%B8%8E%E7%8E%AF%E7%BB%95%E4%BA%A4%E6%8E%A5%E8%BF%9E%E7%BB%AD%22%2C%0A%20%20%20%20%22PASS%20saturn%20%E6%8A%B5%E8%BE%BE%E4%B8%8E%E5%81%9C%E7%95%99%E6%8C%81%E7%BB%AD%E6%B8%B2%E6%9F%93%22%2C%0A%20%20%20%20%22PASS%20uranus%20%E6%8A%B5%E8%BE%BE%E5%90%8E%E5%B1%85%E4%B8%AD%E3%80%81%E7%94%BB%E9%9D%A2%E5%8D%A0%E6%AF%94%E7%BA%A6%2025%25%22%2C%0A%20%20%20%20%22PASS%20uranus%20%E9%A3%9E%E8%A1%8C%E4%B8%8E%E7%8E%AF%E7%BB%95%E4%BA%A4%E6%8E%A5%E8%BF%9E%E7%BB%AD%22%2C%0A%20%20%20%20%22PASS%20uranus%20%E6%8A%B5%E8%BE%BE%E4%B8%8E%E5%81%9C%E7%95%99%E6%8C%81%E7%BB%AD%E6%B8%B2%E6%9F%93%22%2C%0A%20%20%20%20%22PASS%20neptune%20%E6%8A%B5%E8%BE%BE%E5%90%8E%E5%B1%85%E4%B8%AD%E3%80%81%E7%94%BB%E9%9D%A2%E5%8D%A0%E6%AF%94%E7%BA%A6%2025%25%22%2C%0A%20%20%20%20%22PASS%20neptune%20%E9%A3%9E%E8%A1%8C%E4%B8%8E%E7%8E%AF%E7%BB%95%E4%BA%A4%E6%8E%A5%E8%BF%9E%E7%BB%AD%22%2C%0A%20%20%20%20%22PASS%20neptune%20%E6%8A%B5%E8%BE%BE%E4%B8%8E%E5%81%9C%E7%95%99%E6%8C%81%E7%BB%AD%E6%B8%B2%E6%9F%93%22%2C%0A%20%20%20%20%22PASS%20%E9%A3%9E%E8%A1%8C%E4%B8%AD%20Esc%20%E8%BF%94%E5%9B%9E%E4%BF%AF%E7%9E%B0%E5%B9%B6%E6%B8%85%E9%9B%B6%20HUD%22%2C%0A%20%20%20%20%22PASS%20%E4%BF%AE%E6%94%B9%E8%B7%9D%E7%A6%BB%E5%B0%BA%E5%BA%A6%E5%90%8E%E8%BD%A8%E9%81%93%E9%87%8D%E5%BB%BA%E3%80%81%E7%8A%B6%E6%80%81%E5%8F%AF%E7%94%A8%22%2C%0A%20%20%20%20%22PASS%20%E5%85%AB%E5%BC%A0%E5%8D%A1%E7%89%8C%E5%AE%8C%E6%88%90%E7%83%98%E7%84%99%22%2C%0A%20%20%20%20%22PASS%20%E6%B7%B1%E9%93%BE%E6%8E%A5%E6%AD%A3%E7%A1%AE%E5%B1%95%E7%A4%BA%E5%9C%B0%E7%90%83%E9%98%85%E8%AF%BB%E9%A1%B5%22%2C%0A%20%20%20%20%22PASS%20%E6%B7%B1%E9%93%BE%E6%8E%A5%E8%BF%94%E5%9B%9E%E6%8C%89%E9%92%AE%E7%95%99%E5%9C%A8%E5%9B%BE%E9%89%B4%E9%A6%96%E9%A1%B5%22%0A%20%20%5D%0A%7D
+- list:
+  - listitem: PASS β=0 GPU 世界方向 (128,128)
+  - listitem: PASS β=0 GPU 世界方向 (16,16)
+  - listitem: PASS β=0 GPU 世界方向 (239,239)
+  - listitem: PASS 关闭相对论与 β=0 逐像素一致
+  - listitem: PASS 旋转相机后仍采样正确世界方向
+  - listitem: PASS 前向 β=0.6 蓝移增亮，没有反成后向红移
+  - listitem: PASS GPU 完整逆 boost，运动轴 0,0,-1，像素 (16,32)
+  - listitem: PASS GPU 完整逆 boost，运动轴 0,0,-1，像素 (128,128)
+  - listitem: PASS GPU 完整逆 boost，运动轴 0,0,-1，像素 (239,220)
+  - listitem: PASS GPU 完整逆 boost，运动轴 1,2,-3，像素 (16,32)
+  - listitem: PASS GPU 完整逆 boost，运动轴 1,2,-3，像素 (128,128)
+  - listitem: PASS GPU 完整逆 boost，运动轴 1,2,-3，像素 (239,220)
+  - listitem: PASS 后向 β=0.6 红移变暗
+  - listitem: PASS 实际 Scene pass 背景透明、实体不透明
+  - listitem: PASS 有限距离实体在 β=0.98 仍可辨认
+  - listitem: PASS 真实 shader 与 framebuffer 无 WebGL 错误
+  - listitem: PASS 实际 HUD 一程参考下限为 37.29 分钟
+  - listitem: PASS 实际页面星空立方体包含非零像素
+  - listitem: PASS 实际页面主场景包含实体
+  - listitem: PASS mercury 抵达后居中、画面占比约 25%
+  - listitem: PASS mercury 飞行与环绕交接连续
+  - listitem: PASS mercury 抵达与停留持续渲染
+  - listitem: PASS venus 抵达后居中、画面占比约 25%
+  - listitem: PASS venus 飞行与环绕交接连续
+  - listitem: PASS venus 抵达与停留持续渲染
+  - listitem: PASS earth 抵达后居中、画面占比约 25%
+  - listitem: PASS earth 飞行与环绕交接连续
+  - listitem: PASS earth 抵达与停留持续渲染
+  - listitem: PASS mars 抵达后居中、画面占比约 25%
+  - listitem: PASS mars 飞行与环绕交接连续
+  - listitem: PASS mars 抵达与停留持续渲染
+  - listitem: PASS jupiter 抵达后居中、画面占比约 25%
+  - listitem: PASS jupiter 飞行与环绕交接连续
+  - listitem: PASS jupiter 抵达与停留持续渲染
+  - listitem: PASS saturn 抵达后居中、画面占比约 25%
+  - listitem: PASS saturn 飞行与环绕交接连续
+  - listitem: PASS saturn 抵达与停留持续渲染
+  - listitem: PASS uranus 抵达后居中、画面占比约 25%
+  - listitem: PASS uranus 飞行与环绕交接连续
+  - listitem: PASS uranus 抵达与停留持续渲染
+  - listitem: PASS neptune 抵达后居中、画面占比约 25%
+  - listitem: PASS neptune 飞行与环绕交接连续
+  - listitem: PASS neptune 抵达与停留持续渲染
+  - listitem: PASS 飞行中 Esc 返回俯瞰并清零 HUD
+  - listitem: PASS 修改距离尺度后轨道重建、状态可用
+  - listitem: PASS 八张卡牌完成烘焙
+  - listitem: PASS 深链接正确展示地球阅读页
+  - listitem: PASS 深链接返回按钮留在图鉴首页
+- paragraph:
+  - link "太阳系页面":
+    - /url: ./index.html
+  - text: ·
+  - link "星际图鉴":
+    - /url: ../index.html
+- iframe [id="app"]:
+  - button "飞抵水星": 水星
+  - button "飞抵金星": 金星
+  - button "飞抵地球": 地球
+  - button "飞抵火星": 火星
+  - button "飞抵木星": 木星
+  - button "飞抵土星": 土星
+  - link "← 返回星际图鉴":
+    - /url: ../index.html
+  - generic: 太阳系 · 相对论飞行
+  - generic: β
+  - generic: "0.0000"
+  - generic: γ
+  - generic: "1.000"
+  - generic: 演示 Δτ
+  - generic: 0.0 s
+  - generic: 前向蓝移
+  - generic: 1.000×
+  - generic: β 为演示参数；Δτ 为演示积分。参考显示距离 4.4836 AU，光速下限 37.29 分钟。
+  - button "参数面板 (H)"
+  - generic: 正在载入本地 three.js …
+- iframe [id="cards"]:
+  - generic: 科普演示 · 程序化行星插画 · 距离与尺寸采用教学显示比例
+  - generic: SOLAR SYSTEM
+  - heading "星际探索局" [level=1]
+  - paragraph: 八大行星的探索起点。点开任意一张卡牌，看看它离太阳多远、有多大，以及它藏着什么秘密。
+  - link "进入太阳系 · 相对论飞行 → 三维太阳系，参考开普勒轨道并压缩显示尺度；点选行星后连续飞抵，体验星空的光行差与多普勒":
+    - /url: ./solar/index.html
+    - generic: 进入太阳系 · 相对论飞行 →
+    - generic: 三维太阳系，参考开普勒轨道并压缩显示尺度；点选行星后连续飞抵，体验星空的光行差与多普勒
+  - link "NO.01 水星 Mercury 离太阳最近、跑得最快的行星":
+    - /url: "#/p/mercury"
+    - generic: NO.01
+    - generic: 水星
+    - generic: Mercury
+    - generic: 离太阳最近、跑得最快的行星
+  - link "NO.02 金星 Venus 太阳系最热的行星，也是夜空中最亮的行星":
+    - /url: "#/p/venus"
+    - generic: NO.02
+    - generic: 金星
+    - generic: Venus
+    - generic: 太阳系最热的行星，也是夜空中最亮的行星
+  - link "NO.03 地球 Earth 目前已知唯一有生命的蓝色星球":
+    - /url: "#/p/earth"
+    - generic: NO.03
+    - generic: 地球
+    - generic: Earth
+    - generic: 目前已知唯一有生命的蓝色星球
+  - link "NO.04 火星 Mars 红色的沙漠世界，人类最想登陆的行星":
+    - /url: "#/p/mars"
+    - generic: NO.04
+    - generic: 火星
+    - generic: Mars
+    - generic: 红色的沙漠世界，人类最想登陆的行星
+  - link "NO.05 木星 Jupiter 太阳系最大的行星，一个巨大的气态球":
+    - /url: "#/p/jupiter"
+    - generic: NO.05
+    - generic: 木星
+    - generic: Jupiter
+    - generic: 太阳系最大的行星，一个巨大的气态球
+  - link "NO.06 土星 Saturn 戴着光环的宝石，太阳系最上镜的行星":
+    - /url: "#/p/saturn"
+    - generic: NO.06
+    - generic: 土星
+    - generic: Saturn
+    - generic: 戴着光环的宝石，太阳系最上镜的行星
+  - link "NO.07 天王星 Uranus 躺着自转的冰蓝色行星":
+    - /url: "#/p/uranus"
+    - generic: NO.07
+    - generic: 天王星
+    - generic: Uranus
+    - generic: 躺着自转的冰蓝色行星
+  - link "NO.08 海王星 Neptune 最遥远的深蓝行星，风速快得吓人":
+    - /url: "#/p/neptune"
+    - generic: NO.08
+    - generic: 海王星
+    - generic: Neptune
+    - generic: 最遥远的深蓝行星，风速快得吓人
