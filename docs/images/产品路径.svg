@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="430" viewBox="0 0 1040 430">
+<title>从图鉴首页出发的两条探索路径</title>
+<desc>选择行星卡牌进入阅读与旋转球体；进入太阳系点选飞抵后环绕观察，并可进入对应行星阅读页。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8ddde9"/></marker></defs>
+<rect width="1040" height="430" rx="20" fill="#080e23"/>
+<g font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#edf4ff">
+<text x="30" y="38" font-size="25" font-weight="600">两条路径，都从图鉴首页出发</text>
+<g fill="#111c38" stroke="#476481" stroke-width="1.5">
+<rect x="30" y="65" width="250" height="100" rx="14"/>
+<rect x="385" y="65" width="290" height="100" rx="14"/>
+<rect x="775" y="65" width="235" height="100" rx="14"/>
+<rect x="30" y="260" width="250" height="100" rx="14"/>
+<rect x="385" y="260" width="290" height="100" rx="14"/>
+<rect x="775" y="260" width="235" height="100" rx="14"/>
+</g>
+<g font-size="21" font-weight="600" text-anchor="middle">
+<text x="155" y="105">选择行星卡牌</text><text x="530" y="105">阅读行星介绍</text><text x="892" y="105">拖动球体</text>
+<text x="155" y="300">进入太阳系</text><text x="530" y="300">点选与连续飞抵</text><text x="892" y="300">环绕观察</text>
+</g>
+<g font-size="16" fill="#b5c9e8" text-anchor="middle">
+<text x="155" y="137">认识八大行星的名字与特点</text><text x="530" y="137">查看基本数据与科普文字</text><text x="892" y="137">观察程序化球体插画</text>
+<text x="155" y="332">看轨道，选择目的地</text><text x="530" y="332">体验相对论星空变化</text><text x="892" y="332">拉近、拉远、改变角度</text>
+</g>
+<g fill="none" stroke="#8ddde9" stroke-width="2.5" marker-end="url(#arrow)">
+<path d="M290 115H375"/><path d="M685 115H765"/>
+<path d="M290 310H375"/><path d="M685 310H765"/>
+<path d="M892 250V215H530V175"/>
+</g>
+<text x="690" y="203" font-size="16" fill="#8ddde9">阅读该星球</text>
+<text x="30" y="402" font-size="17" fill="#a9bddc">先认识，再观察；先体验变化，再寻找解释。</text>
+</g></svg>

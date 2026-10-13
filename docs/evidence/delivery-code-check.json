@@ -1,0 +1,118 @@
+{
+  "checkedAt": "2026-10-13T16:06:57.705335+08:00",
+  "scope": "交付 code/ 与检查修复后的原版 code/ 对照，排除 .DS_Store",
+  "count": 22,
+  "allMatch": true,
+  "files": [
+    {
+      "path": "code/app.js",
+      "sha256": "78668b31d09d3dee1d4c03d5d1772f7a38685174d95f8de544b9b558f65e6485",
+      "sourceMatches": true
+    },
+    {
+      "path": "code/index.html",
+      "sha256": "c0c1a85a3f4fdd48cfe80a0431021e46ce123698f341c90793be2c995d4cadd4",
+      "sourceMatches": true
+    },
+    {
+      "path": "code/planet-visuals.js",
+      "sha256": "931c21cbdfb5010b65a58b29bcf15485a7659122cdea030e45d558668c58d965",
+      "sourceMatches": true
+    },
+    {
+      "path": "code/planets.js",
+      "sha256": "6f17f5a0cc89898568496d8c94a693a5f58b1bb455ada5ad4c7e04884e30a72b",
+      "sourceMatches": true
+    },
+    {
+      "path": "code/project.check.mjs",
+      "sha256": "aff2c17fccee598579ea1d49d47595356f11b26959612a21aa340d08eacc1663",
+      "sourceMatches": true
+    },
+    {
+      "path": "code/solar/index.html",
+      "sha256": "5653cdef90ccaa96d82bd930b9e3ebaca7bf818388f9715bd821ce0caf5910ac",
+      "sourceMatches": true
+    },
+    {
+      "path": "code/solar/orbit.test.mjs",
+      "sha256": "b7dd8982381a326bc687360b2634d6d99206ff63500090f8507b693148ef4e24",
+      "sourceMatches": true
+    },
+    {
+      "path": "code/solar/rel.js",
+      "sha256": "4f8abca6b2679f81b520c697925691e0d4d1df8e7049df548b48f0dfaa19c374",
+      "sourceMatches": true
+    },
+    {
+      "path": "code/solar/rel.test.mjs",
+      "sha256": "80ebaafd680c7b4baeb9e23633ffc323a323c697aad2c7fa718e635b8258bb07",
+      "sourceMatches": true
+    },
+    {
+      "path": "code/solar/render-check.html",
+      "sha256": "81fd565b0b4f54af3397d424c06276900eafd0cf6a7fd9ed9af8d7f5a76f19bd",
+      "sourceMatches": true
+    },
+    {
+      "path": "code/solar/render-check.js",
+      "sha256": "4ea800e89bbba171417d211720194ac228bf45a323bed357700b8ac90363b3df",
+      "sourceMatches": true
+    },
+    {
+      "path": "code/solar/rendering.js",
+      "sha256": "5ed9062f6a25edb9f79d5ca21e1d382bfc43bbfd2634e8d388cb8ece1ebbd979",
+      "sourceMatches": true
+    },
+    {
+      "path": "code/solar/shader.check.mjs",
+      "sha256": "0a52981d872af52453360983a8269452cbe858beba5e28578de776027ee9c7a3",
+      "sourceMatches": true
+    },
+    {
+      "path": "code/solar/shaders.js",
+      "sha256": "df9a33689d2d5c2c6d30a72f7c53211928f09ee646d1076d9f3ac8b85abbfcf9",
+      "sourceMatches": true
+    },
+    {
+      "path": "code/solar/solar-app.js",
+      "sha256": "daf8b4c3092c2fd1fa8f0e9bdd5ab18ff9788e025a66cb00737ec9e933721b50",
+      "sourceMatches": true
+    },
+    {
+      "path": "code/solar/solar.css",
+      "sha256": "d8b73ec428be38d04f8516b9b5fb3a2108f386dcb6d01adfc3d17dbed72b17c2",
+      "sourceMatches": true
+    },
+    {
+      "path": "code/solar/solarsystem.js",
+      "sha256": "a3c664c157b23a50869226d7ab9c23cdc3963b0b66ca460282013a10de7f345b",
+      "sourceMatches": true
+    },
+    {
+      "path": "code/style.css",
+      "sha256": "b9d4b4a1ca663f10de8adb1f31f79317f97c828c55b1b9a07c56f7eba48a98e5",
+      "sourceMatches": true
+    },
+    {
+      "path": "code/three-loader.js",
+      "sha256": "e67669c8afd4657dc9ed48eb93746457cf20df5f5f817c3718a3010d8c6b66be",
+      "sourceMatches": true
+    },
+    {
+      "path": "code/vendor/THREE-LICENSE.txt",
+      "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d",
+      "sourceMatches": true
+    },
+    {
+      "path": "code/vendor/metadata.json",
+      "sha256": "078738853b7881945306f7418017a5e57019acf6ccfbd72ab065d557e406a0bf",
+      "sourceMatches": true
+    },
+    {
+      "path": "code/vendor/three.module.js",
+      "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495",
+      "sourceMatches": true
+    }
+  ]
+}

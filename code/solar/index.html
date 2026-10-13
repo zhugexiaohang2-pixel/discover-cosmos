@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>太阳系 · 相对论飞行 — 星际探索局</title>
+<link rel="stylesheet" href="./solar.css" />
+</head>
+<body>
+
+<!-- ============ 3D 画布 ============ -->
+<canvas id="gl"></canvas>
+
+<!-- ============ 行星标签层（DOM 覆盖，解决全景下小球点不中的问题）============ -->
+<div class="labels" id="labels"></div>
+
+<!-- ============ 左上：返回 + 标题 ============ -->
+<div class="topbar">
+  <a class="topbar__back" href="../index.html">← 返回星际图鉴</a>
+  <div class="topbar__title">太阳系 · 相对论飞行</div>
+</div>
+
+<!-- ============ 左下：选中信息卡 ============ -->
+<div class="selcard" id="selcard" hidden>
+  <div class="selcard__zh" id="sel-zh"></div>
+  <div class="selcard__en" id="sel-en"></div>
+  <div class="selcard__tag" id="sel-tag"></div>
+  <a class="selcard__link" id="sel-link" href="#">阅读该星球 →</a>
+</div>
+
+<!-- ============ 右下：HUD ============ -->
+<div class="hud" id="hud">
+  <div class="hud__row"><span class="hud__k">β</span><span class="hud__v" id="hud-beta">0.0000</span></div>
+  <div class="hud__row"><span class="hud__k">γ</span><span class="hud__v" id="hud-gamma">1.000</span></div>
+  <div class="hud__row"><span class="hud__k">演示 Δτ</span><span class="hud__v" id="hud-tau">0.0 s</span></div>
+  <div class="hud__row"><span class="hud__k">前向蓝移</span><span class="hud__v" id="hud-dop">1.000×</span></div>
+  <div class="hud__note" id="hud-note"></div>
+  <button class="hud__more" id="btn-more" type="button">参数面板 (H)</button>
+</div>
+
+<!-- ============ 参数面板（默认隐藏；修改尺度后返回俯瞰）============ -->
+<div class="panel" id="panel" hidden>
+  <div class="panel__hd">
+    <span>参数面板</span>
+    <button id="btn-close-panel" type="button" aria-label="关闭">×</button>
+  </div>
+
+  <label class="panel__row">
+    <span>飞行时长 <b id="v-duration">20</b> s</span>
+    <input type="range" id="r-duration" min="6" max="60" step="1" value="20" />
+  </label>
+
+  <label class="panel__row">
+    <span>峰值 β（演示参数） <b id="v-beta">0.98</b></span>
+    <input type="range" id="r-beta" min="0" max="0.995" step="0.005" value="0.98" />
+  </label>
+
+  <label class="panel__row">
+    <span>距离幂指数 ED <b id="v-ed">0.50</b></span>
+    <input type="range" id="r-ed" min="0.30" max="0.75" step="0.01" value="0.50" />
+  </label>
+
+  <label class="panel__row">
+    <span>半径幂指数 ER <b id="v-er">0.45</b></span>
+    <input type="range" id="r-er" min="0.15" max="0.75" step="0.01" value="0.45" />
+  </label>
+
+  <label class="panel__row">
+    <span>行星尺寸 BASE <b id="v-base">0.006</b></span>
+    <input type="range" id="r-base" min="0.003" max="0.02" step="0.001" value="0.006" />
+  </label>
+
+  <label class="panel__row panel__row--check">
+    <input type="checkbox" id="c-aberr" checked />
+    <span>光行差 + 多普勒（关闭即为"无相对论"对照组）</span>
+  </label>
+
+  <div class="panel__note">
+    β 是<b>演示参数</b>，Δτ 是对演示速度的积分。参考显示距离 4.4836 AU，
+    一程光速下限 <b id="v-tripmin">37.29</b> 分钟（光速下限）。
+    <p>修改距离或尺寸参数后返回俯瞰；飞行时长在下次起飞时生效。</p>
+  </div>
+</div>
+
+<!-- ============ 提示 ============ -->
+<div class="hint" id="hint">
+  拖动环绕 · 滚轮缩放 · 点击行星或标签飞抵 · <b>Esc</b> 返回俯瞰
+</div>
+
+<!-- ============ 加载 / 错误 ============ -->
+<div class="boot" id="boot"><div class="boot__inner">正在载入本地 three.js …</div></div>
+
+<script type="module" src="./solar-app.js"></script>
+</body>
+</html>

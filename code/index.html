@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>星际探索局 · 星际图鉴</title>
+<link rel="stylesheet" href="./style.css" />
+<!--
+  说明：这个页面是"视觉草稿纸"，不是最终产物。
+  小程序侧会用 WXML/WXSS + 原生 canvas 重做，本文件的 three.js 代码不会进入小程序。
+-->
+</head>
+<body>
+
+<div class="proto-bar">
+  科普演示 · <b>程序化行星插画</b> · 距离与尺寸采用教学显示比例
+</div>
+
+<!-- 星空背景：纯 CSS，无依赖 -->
+<div class="sky" aria-hidden="true">
+  <div class="sky__stars" id="stars"></div>
+  <div class="sky__veil"></div>
+</div>
+
+<div class="app">
+
+  <!-- ==================== 首页 ==================== -->
+  <section class="page" id="view-index">
+    <header class="hd">
+      <span class="hd__eyebrow">SOLAR SYSTEM</span>
+      <h1 class="hd__title">星际探索局</h1>
+      <p class="hd__sub">八大行星的探索起点。点开任意一张卡牌，看看它离太阳多远、有多大，以及它藏着什么秘密。</p>
+      <a class="hd__fancy" href="./solar/index.html">
+        <span class="hd__fancy-t">进入太阳系 · 相对论飞行 →</span>
+        <span class="hd__fancy-s">三维太阳系，参考开普勒轨道并压缩显示尺度；点选行星后连续飞抵，体验星空的光行差与多普勒</span>
+      </a>
+    </header>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <!-- ==================== 阅读页 ==================== -->
+  <section class="page" id="view-article" hidden>
+    <button class="back" id="btn-back" type="button">
+      <span aria-hidden="true">←</span> 返回星际图鉴
+    </button>
+
+    <div class="hero" id="hero">
+      <div class="hero__frame" id="hero-frame">
+        <canvas class="hero__gl" id="hero-canvas"></canvas>
+        <div class="hero__fallback" id="hero-fallback"></div>
+      </div>
+    </div>
+    <p class="hero__hint" id="hero-hint"></p>
+
+    <div class="title-block">
+      <h2 class="title-block__zh" id="a-zh"></h2>
+      <p class="title-block__en" id="a-en"></p>
+      <p class="title-block__tag" id="a-tag"></p>
+    </div>
+
+    <div class="facts" id="a-facts"></div>
+
+    <div class="body" id="a-body"></div>
+  </section>
+
+</div>
+
+<noscript>
+  <div class="noscript">这个原型需要 JavaScript 才能渲染行星卡牌。</div>
+</noscript>
+
+<script>
+  /* 兜底：如果 ES module 脚本完全没跑起来（例如浏览器过旧），至少给出可读提示而不是白屏 */
+  window.__protoBooted = false;
+  setTimeout(function () {
+    if (!window.__protoBooted) {
+      var n = document.createElement('div');
+      n.className = 'noscript';
+      n.textContent = '脚本没有启动。请确认是通过 http 服务打开（python3 -m http.server），而不是双击 file:// 打开。';
+      document.body.appendChild(n);
+    }
+  }, 2500);
+</script>
+
+<script type="module" src="./app.js"></script>
+</body>
+</html>

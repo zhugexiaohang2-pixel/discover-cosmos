@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="550" viewBox="0 0 1100 550">
+<title>静态星空与每帧相对论合成</title>
+<desc>初始化生成程序星空并捕获六面立方体。每帧从相机和速度反查星空方向，调整颜色亮度，再与透明背景的主场景合成。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8ddde9"/></marker></defs>
+<rect width="1100" height="550" rx="20" fill="#080e23"/>
+<g font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#edf4ff">
+<text x="30" y="40" font-size="25" font-weight="600">启动一次：把程序星空保存下来</text>
+<g fill="#111c38" stroke="#476481" stroke-width="1.5">
+<rect x="30" y="80" width="300" height="105" rx="14"/>
+<rect x="460" y="80" width="320" height="105" rx="14"/>
+<rect x="30" y="285" width="250" height="110" rx="14"/>
+<rect x="350" y="285" width="300" height="110" rx="14"/>
+<rect x="720" y="285" width="350" height="110" rx="14"/>
+<rect x="720" y="455" width="350" height="70" rx="14"/>
+</g>
+<g font-size="21" font-weight="600" text-anchor="middle">
+<text x="180" y="119">生成 12000 个星点</text>
+<text x="620" y="119">六面立方体纹理</text>
+<text x="155" y="319">相机与像素信息</text>
+<text x="500" y="319">完整方向逆变换</text>
+<text x="895" y="319">星空与行星层合成</text>
+</g>
+<g font-size="16" fill="#b5c9e8" text-anchor="middle">
+<text x="180" y="149">8000 个均匀分布的普通星点</text><text x="180" y="174">4000 个银河带星点</text>
+<text x="620" y="150">每面 1024×1024，保持世界方向固定</text>
+<text x="155" y="349">像素位置、视场角、相机朝向</text><text x="155" y="375">演示 β 与移动方向</text>
+<text x="500" y="349">按观察射线反查静止天空</text><text x="500" y="375">沿源方向读取立方体纹理</text>
+<text x="895" y="349">星空近似调色与 D⁴ 亮度变化</text><text x="895" y="375">ACES + sRGB → 屏幕</text>
+<text x="895" y="483">独立绘制太阳、行星与轨道</text><text x="895" y="509">背景透明，实体保留几何显示</text>
+</g>
+<g fill="none" stroke="#8ddde9" stroke-width="2.5" marker-end="url(#arrow)">
+<path d="M340 132H450"/><path d="M620 195V225H500V275"/>
+<path d="M290 340H340"/><path d="M660 340H710"/>
+<path d="M895 445V405"/>
+</g>
+<text x="30" y="255" font-size="25" font-weight="600">每一帧：按当前观察状态组合画面</text>
+<text x="30" y="455" font-size="17" fill="#a9bddc">星空无限远；附近天体单独绘制。</text>
+<text x="30" y="486" font-size="17" fill="#a9bddc">这是一种教学分层，不是完整航行成像。</text>
+</g></svg>

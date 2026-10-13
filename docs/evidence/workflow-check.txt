@@ -1,0 +1,13 @@
+本地模板检查
+日期: 2026-10-13T16:08:51.275883+08:00
+
+Ruby 2.6.10; Psych 3.1.0
+PASS YAML parsing
+PASS main push, PR and manual triggers
+PASS verify -> build -> deploy dependencies
+PASS Node.js 24 and bash verify.sh
+PASS code/ artifact root
+PASS main branch deployment guards and PR exclusion
+PASS Pages deployment permissions and environment
+
+模板未启用，未运行远端 GitHub Actions，未创建仓库或公开网页。

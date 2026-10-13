@@ -1,0 +1,9 @@
+{
+  "name": "discover-cosmos",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "bash verify.sh"
+  }
+}

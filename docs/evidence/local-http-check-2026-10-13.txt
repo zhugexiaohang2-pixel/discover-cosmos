@@ -1,0 +1,12 @@
+2026-10-13 本机 HTTP 复验；Node.js v24.21.0
+PASS GET / => 200 text/html; charset=utf-8
+PASS GET /solar/ => 200 text/html; charset=utf-8
+PASS GET /solar?check=1 => 301 /solar/?check=1
+PASS GET /vendor/three.module.js => 200 text/javascript; charset=utf-8
+PASS GET /README.md => 404 text/plain; charset=utf-8
+PASS GET /missing => 404 text/plain; charset=utf-8
+PASS GET /%2e%2e%2fREADME.md => 403 text/plain; charset=utf-8
+PASS GET /%ZZ => 400 text/plain; charset=utf-8
+PASS HEAD /index.html => 200 text/html; charset=utf-8
+PASS POST /index.html => 405 text/plain; charset=utf-8
+启动入口：bash start.command 已验证，8040 占用时自动切换到 8041；该备用会话经 Ctrl+C 停止，返回 130。主服务重启后监听 8040，仅绑定 127.0.0.1。

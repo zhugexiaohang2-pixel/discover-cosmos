@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DiscoverCOSMOS 浏览器回归检查</title>
+<style>
+body { margin: 24px; font: 16px/1.7 system-ui; color: #eaf0ff; background: #0a1024; }
+a { color: #7fe3ff; } li { margin: 4px 0; } .fail { color: #ff9999; }
+iframe { width: 640px; max-width: 100%; height: 420px; border: 1px solid #647596; }
+canvas { width: 256px; height: 256px; border: 1px solid #647596; }
+</style>
+</head>
+<body>
+<h1>浏览器回归检查</h1>
+<p id="summary" role="status">正在执行真实 WebGL shader 与页面流程检查…</p>
+<p id="environment"></p>
+<a id="download-result" download="browser-check.json" hidden>下载检查结果 JSON</a>
+<ol id="results"></ol>
+<p><a href="./index.html">太阳系页面</a> · <a href="../index.html">星际图鉴</a></p>
+<canvas id="check-canvas" width="256" height="256"></canvas>
+<iframe id="app" title="太阳系回归场景"></iframe>
+<iframe id="cards" title="卡牌图鉴回归场景"></iframe>
+<script type="module" src="./render-check.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+{
+  "package": "DiscoverCOSMOS-交付包-2026-10-13",
+  "preparedAt": "2026-10-13T16:11:02.936589+08:00",
+  "fileCountExcludingManifest": 46,
+  "sourceCodeFiles": 22,
+  "sourceCodeAllMatch": true,
+  "checks": {
+    "nodeVersion": "v24.19.0",
+    "offlineAssertions": 650,
+    "sourceBrowserAssertions": 48,
+    "sourceBrowserReused": true,
+    "workflowTemplateValidated": true,
+    "gitInitialized": false,
+    "githubDeploymentActivated": false
+  },
+  "note": "清单记录本次交付快照，校验范围不包含清单自身。接手修改后应以 Git 记录追踪，重新打包时更新清单。",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 211,
+      "sha256": "dbbd2461884d7200c23e6ae7ef8f39c0788b0605223f693d4a2d5ecf96688936"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1131,
+      "sha256": "9a8eea5a47d40cdfcc305a9f9762b9914690510c664bea37429d15b2bfecf2f5"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 16274,
+      "sha256": "993e281343f11b7a5df947af485a275a2a13ca72166530ca6140b99ca5f60fe1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4704,
+      "sha256": "d03d12e63577c98167fcfeec162546ac14f159667aead00239af100148342c9f"
+    },
+    {
+      "path": "archive/original-2026-10-13.tar.gz",
+      "bytes": 78785,
+      "sha256": "b8565c317bd5f48d1a5eb724a314c9f08573bd6d399321effa954d01f70833e3"
+    },
+    {
+      "path": "code/app.js",
+      "bytes": 16642,
+      "sha256": "78668b31d09d3dee1d4c03d5d1772f7a38685174d95f8de544b9b558f65e6485"
+    },
+    {
+      "path": "code/index.html",
+      "bytes": 3031,
+      "sha256": "c0c1a85a3f4fdd48cfe80a0431021e46ce123698f341c90793be2c995d4cadd4"
+    },
+    {
+      "path": "code/planet-visuals.js",
+      "bytes": 4104,
+      "sha256": "931c21cbdfb5010b65a58b29bcf15485a7659122cdea030e45d558668c58d965"
+    },
+    {
+      "path": "code/planets.js",
+      "bytes": 8137,
+      "sha256": "6f17f5a0cc89898568496d8c94a693a5f58b1bb455ada5ad4c7e04884e30a72b"
+    },
+    {
+      "path": "code/project.check.mjs",
+      "bytes": 2609,
+      "sha256": "aff2c17fccee598579ea1d49d47595356f11b26959612a21aa340d08eacc1663"
+    },
+    {
+      "path": "code/solar/index.html",
+      "bytes": 3822,
+      "sha256": "5653cdef90ccaa96d82bd930b9e3ebaca7bf818388f9715bd821ce0caf5910ac"
+    },
+    {
+      "path": "code/solar/orbit.test.mjs",
+      "bytes": 15229,
+      "sha256": "b7dd8982381a326bc687360b2634d6d99206ff63500090f8507b693148ef4e24"
+    },
+    {
+      "path": "code/solar/rel.js",
+      "bytes": 9523,
+      "sha256": "4f8abca6b2679f81b520c697925691e0d4d1df8e7049df548b48f0dfaa19c374"
+    },
+    {
+      "path": "code/solar/rel.test.mjs",
+      "bytes": 18107,
+      "sha256": "80ebaafd680c7b4baeb9e23633ffc323a323c697aad2c7fa718e635b8258bb07"
+    },
+    {
+      "path": "code/solar/render-check.html",
+      "bytes": 1129,
+      "sha256": "81fd565b0b4f54af3397d424c06276900eafd0cf6a7fd9ed9af8d7f5a76f19bd"
+    },
+    {
+      "path": "code/solar/render-check.js",
+      "bytes": 10258,
+      "sha256": "4ea800e89bbba171417d211720194ac228bf45a323bed357700b8ac90363b3df"
+    },
+    {
+      "path": "code/solar/rendering.js",
+      "bytes": 2575,
+      "sha256": "5ed9062f6a25edb9f79d5ca21e1d382bfc43bbfd2634e8d388cb8ece1ebbd979"
+    },
+    {
+      "path": "code/solar/shader.check.mjs",
+      "bytes": 3257,
+      "sha256": "0a52981d872af52453360983a8269452cbe858beba5e28578de776027ee9c7a3"
+    },
+    {
+      "path": "code/solar/shaders.js",
+      "bytes": 3259,
+      "sha256": "df9a33689d2d5c2c6d30a72f7c53211928f09ee646d1076d9f3ac8b85abbfcf9"
+    },
+    {
+      "path": "code/solar/solar-app.js",
+      "bytes": 32094,
+      "sha256": "daf8b4c3092c2fd1fa8f0e9bdd5ab18ff9788e025a66cb00737ec9e933721b50"
+    },
+    {
+      "path": "code/solar/solar.css",
+      "bytes": 7819,
+      "sha256": "d8b73ec428be38d04f8516b9b5fb3a2108f386dcb6d01adfc3d17dbed72b17c2"
+    },
+    {
+      "path": "code/solar/solarsystem.js",
+      "bytes": 10032,
+      "sha256": "a3c664c157b23a50869226d7ab9c23cdc3963b0b66ca460282013a10de7f345b"
+    },
+    {
+      "path": "code/style.css",
+      "bytes": 11149,
+      "sha256": "b9d4b4a1ca663f10de8adb1f31f79317f97c828c55b1b9a07c56f7eba48a98e5"
+    },
+    {
+      "path": "code/three-loader.js",
+      "bytes": 196,
+      "sha256": "e67669c8afd4657dc9ed48eb93746457cf20df5f5f817c3718a3010d8c6b66be"
+    },
+    {
+      "path": "code/vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
+    },
+    {
+      "path": "code/vendor/metadata.json",
+      "bytes": 207,
+      "sha256": "078738853b7881945306f7418017a5e57019acf6ccfbd72ab065d557e406a0bf"
+    },
+    {
+      "path": "code/vendor/three.module.js",
+      "bytes": 1272972,
+      "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495"
+    },
+    {
+      "path": "docs/01-产品介绍.md",
+      "bytes": 6749,
+      "sha256": "e0bd6640167c98de4e620919e30c463ee02d1b644bb38f53670af577b8f9069c"
+    },
+    {
+      "path": "docs/02-技术方案.md",
+      "bytes": 7733,
+      "sha256": "5ac760cfcee4b9822ef08499ef6005c2994f5573926cb17b0650a80fcb04b383"
+    },
+    {
+      "path": "docs/03-验证报告.md",
+      "bytes": 4881,
+      "sha256": "182faec3c0e4b9d66f03001fa87c4a7e37ab0a6fef965a5497721c5978821249"
+    },
+    {
+      "path": "docs/04-检查与修复记录.md",
+      "bytes": 4957,
+      "sha256": "316702eb4762a51825cfd8b7c75bca62b52e638d539db5aee0ddfe474e937c87"
+    },
+    {
+      "path": "docs/05-相对论飞行与背景星空.md",
+      "bytes": 11260,
+      "sha256": "c501b73537686d6dde453ba99a8fdefc407a8cb03401b5812fd6491da377b119"
+    },
+    {
+      "path": "docs/06-公式读本.md",
+      "bytes": 9843,
+      "sha256": "f37e5ac5b28df17483d8be32881342753ce07d86ab682f31e9ae29b368fa275a"
+    },
+    {
+      "path": "docs/evidence/browser-check.json",
+      "bytes": 2781,
+      "sha256": "1e2fce0d682a603ff35b0dd78acd6e57a029cb4b3ad96018bf6df27a8e6d9128"
+    },
+    {
+      "path": "docs/evidence/delivery-code-check.json",
+      "bytes": 3818,
+      "sha256": "a9f5ad454ddd74f85d907c26d9c30dd2c0ac3a875b3ae2092e51462b793540fa"
+    },
+    {
+      "path": "docs/evidence/layout-check.json",
+      "bytes": 804,
+      "sha256": "164e0048ac933e2b97d887d2d75384f42f8ca8767ff7b74231e0801a8f39c6ea"
+    },
+    {
+      "path": "docs/evidence/node-check.txt",
+      "bytes": 896,
+      "sha256": "fb356e92a4464ee86cd1ed58919c282784136b0517c87916a12de96871a78d95"
+    },
+    {
+      "path": "docs/evidence/source-node-check.txt",
+      "bytes": 893,
+      "sha256": "f0b2bf5ca5dbd3e781e57d3c3ca2f47a2826f42d3d82f28eebbbfe388cd1fdd0"
+    },
+    {
+      "path": "docs/evidence/workflow-check.txt",
+      "bytes": 435,
+      "sha256": "e6b766b247ccf44c5636668e43413f6c2ab20f537989efb700e76e9cc4869c0a"
+    },
+    {
+      "path": "docs/images/产品路径.png",
+      "bytes": 57157,
+      "sha256": "c2341c07d581cf29ef8a233d8248c9e642873af5d7050265911e8801574c5db7"
+    },
+    {
+      "path": "docs/images/产品路径.svg",
+      "bytes": 2270,
+      "sha256": "a180c07c73ee959d10e8ac6369674d75a4144d6efedd0313275fc7a1c4f3113f"
+    },
+    {
+      "path": "docs/images/星空渲染流程.png",
+      "bytes": 85814,
+      "sha256": "3e1ed55aafd272fa35b4ff19da0a117e2f9c661b38574d2d52e07129f38b3db1"
+    },
+    {
+      "path": "docs/images/星空渲染流程.svg",
+      "bytes": 2751,
+      "sha256": "a413c0fe79a59cb5f79bbcc97903ce9609ccdb6473c6a4a39f0bea5a8959ec59"
+    },
+    {
+      "path": "package.json",
+      "bytes": 114,
+      "sha256": "8b9ee69480beecf20bbf1a32b149150ad7151a7a635bd7e70d40f58d00ed5e21"
+    },
+    {
+      "path": "templates/pages.yml",
+      "bytes": 1567,
+      "sha256": "92c6a31987d6bc8edf19893e164da87fd774d403cf85c1b705c7e18101e29b9b"
+    },
+    {
+      "path": "verify.sh",
+      "bytes": 1394,
+      "sha256": "6008955357f98d7a3f6a3b6aba368235efbbe2683835c3eb6f323e4a4ff891c7"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "source": "浏览器 DOM 边界与截图检查，非真实手机测试",
+  "selected": "earth",
+  "rects": {
+    "selcard": {
+      "left": 13,
+      "right": 362,
+      "top": 644.375,
+      "bottom": 799,
+      "clientWidth": 347,
+      "scrollWidth": 347
+    },
+    "hud": {
+      "left": 134,
+      "right": 362,
+      "top": 90,
+      "bottom": 300.34375,
+      "clientWidth": 226,
+      "scrollWidth": 226
+    },
+    "hudNote": {
+      "left": 147,
+      "right": 349,
+      "top": 208.75,
+      "bottom": 251.34375,
+      "clientWidth": 202,
+      "scrollWidth": 202
+    },
+    "panel": {
+      "left": 13,
+      "right": 362,
+      "top": 90,
+      "bottom": 549.53125,
+      "clientHeight": 458,
+      "scrollHeight": 458
+    }
+  }
+}

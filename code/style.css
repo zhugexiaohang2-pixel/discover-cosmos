@@ -1,0 +1,554 @@
+/* 星际探索局 — 视觉草稿区
+ *
+ * 这个文件是"快速试错"的地方：配色、间距、动效节奏都在这里改。
+ * 视觉定稿后，规则会被搬进小程序 styles/common.wxss（去掉 :root，保留类选择器）。
+ *
+ * 配色：深空蓝 / 星云紫 为主，冰蓝作强调色。
+ */
+
+:root {
+  --ink-900: #070b1c;
+  --ink-800: #0d1533;
+  --ink-700: #151f45;
+  --violet: #4c2a85;
+  --violet-soft: #6d47b8;
+  --ice: #7fe3ff;
+  --ice-dim: #4fb6d6;
+  --text: #eaf0ff;
+  --text-dim: #a3b0d4;
+  --card: rgba(24, 34, 74, 0.72);
+  --card-line: rgba(127, 227, 255, 0.16);
+  --radius: 18px;
+  --maxw: 960px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+  color: var(--text);
+  background: var(--ink-900);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================================
+   星空背景：两层星云 + 一层星点
+   ============================================================ */
+
+.sky {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background:
+    radial-gradient(1100px 700px at 14% -6%, rgba(76, 42, 133, 0.62), transparent 62%),
+    radial-gradient(900px 620px at 92% 8%, rgba(20, 60, 130, 0.55), transparent 60%),
+    radial-gradient(760px 760px at 50% 118%, rgba(109, 71, 184, 0.42), transparent 62%),
+    linear-gradient(180deg, #070b1c 0%, #0a1130 46%, #0c1338 100%);
+}
+
+.sky__stars {
+  position: absolute;
+  inset: 0;
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: #fff;
+  animation: twinkle 4.5s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.22;
+    transform: scale(0.85);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1);
+  }
+}
+
+/* 一层缓慢漂移的星云光斑，给背景一点呼吸感 */
+.sky__veil {
+  position: absolute;
+  width: 620px;
+  height: 620px;
+  left: -160px;
+  top: 28%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(127, 227, 255, 0.13), transparent 66%);
+  filter: blur(26px);
+  animation: drift 26s ease-in-out infinite alternate;
+}
+
+@keyframes drift {
+  from {
+    transform: translate3d(0, -24px, 0) scale(1);
+  }
+  to {
+    transform: translate3d(46px, 30px, 0) scale(1.09);
+  }
+}
+
+/* ============================================================
+   页面骨架
+   ============================================================ */
+
+.app {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1;
+  width: 100%;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 40px 22px 56px;
+}
+
+.page[hidden] {
+  display: none;
+}
+
+/* ============================================================
+   首页
+   ============================================================ */
+
+.hd {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.hd__eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 0.32em;
+  color: var(--ice);
+  border: 1px solid var(--card-line);
+  border-radius: 999px;
+  padding: 5px 15px;
+  margin-bottom: 18px;
+}
+
+.hd__title {
+  margin: 0 0 12px;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.14em;
+  background: linear-gradient(96deg, #ffffff 6%, var(--ice) 48%, var(--violet-soft) 96%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hd__sub {
+  margin: 0 auto;
+  max-width: 560px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--text-dim);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(196px, 1fr));
+  gap: 18px;
+}
+
+/* ============================================================
+   行星卡牌
+   ============================================================ */
+
+.card {
+  position: relative;
+  border: 1px solid var(--card-line);
+  border-radius: var(--radius);
+  background: var(--card);
+  padding: 20px 16px 18px;
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(127, 227, 255, 0.42);
+  box-shadow: 0 16px 38px rgba(6, 10, 30, 0.6), 0 0 0 1px rgba(127, 227, 255, 0.12) inset;
+}
+
+.card:active {
+  transform: translateY(-2px) scale(0.99);
+}
+
+.card__stage {
+  height: 132px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 3D 烘焙图定稿前 / three.js 载入失败时的降级球体 */
+.ball {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 28%, #ffffffcc 0%, var(--c1) 34%, var(--c2) 100%);
+  box-shadow: 0 0 26px -4px var(--c2), inset -8px -10px 22px rgba(0, 0, 0, 0.42);
+  animation: bob 6s ease-in-out infinite;
+}
+
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+}
+
+.card.is-baked .ball {
+  background-image: var(--baked);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: none;
+  box-shadow: none;
+  width: 112px;
+  height: 112px;
+}
+
+.card__index {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--ice-dim);
+  opacity: 0.75;
+}
+
+.card__zh {
+  margin-top: 12px;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.card__en {
+  margin-top: 3px;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ice);
+  opacity: 0.86;
+}
+
+.card__tag {
+  margin-top: 10px;
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: var(--text-dim);
+}
+
+/* ============================================================
+   阅读页
+   ============================================================ */
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid var(--card-line);
+  border-radius: 999px;
+  background: rgba(24, 34, 74, 0.6);
+  color: var(--text);
+  font-size: 14px;
+  padding: 9px 18px 9px 14px;
+  cursor: pointer;
+  transition: border-color 0.24s ease, transform 0.24s ease;
+}
+
+.back:hover {
+  border-color: rgba(127, 227, 255, 0.46);
+  transform: translateX(-2px);
+}
+
+.hero {
+  margin: 22px 0 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__frame {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  max-width: 78vw;
+  max-height: 78vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 实时 3D 球体画布 */
+.hero__gl {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+  touch-action: none;
+  cursor: grab;
+}
+
+.hero__gl:active {
+  cursor: grabbing;
+}
+
+/* 3D 未就绪时的降级球体 */
+.hero__fallback {
+  width: 224px;
+  height: 224px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 28%, #ffffffcc 0%, var(--c1) 34%, var(--c2) 100%);
+  box-shadow: 0 0 60px -10px var(--c2), inset -14px -18px 40px rgba(0, 0, 0, 0.45);
+}
+
+.hero.is-live .hero__fallback {
+  display: none;
+}
+
+.hero:not(.is-live) .hero__gl {
+  display: none;
+}
+
+.hero__hint {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: var(--text-dim);
+  opacity: 0.7;
+  margin-top: 4px;
+  min-height: 17px;
+}
+
+.title-block {
+  text-align: center;
+  margin: 10px 0 30px;
+}
+
+.title-block__zh {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 0.16em;
+}
+
+.title-block__en {
+  margin: 7px 0 0;
+  font-size: 13px;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--ice);
+  opacity: 0.85;
+}
+
+.title-block__tag {
+  margin: 14px auto 0;
+  max-width: 520px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--text-dim);
+}
+
+/* 基本数据 */
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.fact {
+  border: 1px solid var(--card-line);
+  border-radius: 14px;
+  background: rgba(18, 27, 62, 0.66);
+  padding: 14px 15px;
+}
+
+.fact__label {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--ice-dim);
+}
+
+.fact__value {
+  margin-top: 7px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* 科普正文 */
+.body {
+  border-top: 1px solid var(--card-line);
+  padding-top: 26px;
+}
+
+.body p {
+  margin: 0 0 18px;
+  font-size: 15.5px;
+  line-height: 2;
+  color: #dbe4ff;
+  text-align: justify;
+}
+
+.body p:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================================
+   原型提示条（小程序里不存在，仅用于提醒这不是最终产物）
+   ============================================================ */
+
+.proto-bar {
+  position: relative;
+  z-index: 2;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: #cbb8ff;
+  background: rgba(76, 42, 133, 0.42);
+  border-bottom: 1px solid rgba(127, 227, 255, 0.14);
+  padding: 7px 16px;
+  text-align: center;
+}
+
+.proto-bar b {
+  color: var(--ice);
+  font-weight: 600;
+}
+
+/* 启动脚本的兜底提示（仅当 ES module 完全无法执行时显示） */
+.noscript {
+  position: relative;
+  z-index: 3;
+  margin: 40px auto;
+  max-width: 620px;
+  border: 1px solid rgba(255, 176, 122, 0.4);
+  border-radius: 14px;
+  background: rgba(70, 40, 20, 0.5);
+  color: #ffd9b8;
+  padding: 18px 20px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+@media (max-width: 560px) {
+  .page {
+    padding: 26px 15px 44px;
+  }
+  .hd__title {
+    font-size: 30px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .card {
+    padding: 15px 12px 14px;
+  }
+  .card__stage {
+    height: 104px;
+  }
+  .ball {
+    width: 76px;
+    height: 76px;
+  }
+  .card.is-baked .ball {
+    width: 88px;
+    height: 88px;
+  }
+  .card__zh {
+    font-size: 17px;
+  }
+  .card__tag {
+    font-size: 11.5px;
+  }
+  .title-block__zh {
+    font-size: 26px;
+  }
+  .hero__frame {
+    width: 232px;
+    height: 232px;
+  }
+  .hero__fallback {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* ============================================================
+   太阳系页入口（指向 solar/）
+   ============================================================ */
+
+.hd__fancy {
+  display: block;
+  max-width: 520px;
+  margin: 24px auto 0;
+  padding: 15px 20px;
+  border: 1px solid rgba(127, 227, 255, 0.34);
+  border-radius: 16px;
+  background: linear-gradient(120deg, rgba(76, 42, 133, 0.42) 0%, rgba(20, 60, 130, 0.34) 100%);
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.24s ease, transform 0.24s ease, box-shadow 0.24s ease;
+}
+
+.hd__fancy:hover {
+  border-color: rgba(127, 227, 255, 0.68);
+  transform: translateY(-3px);
+  box-shadow: 0 14px 34px rgba(6, 10, 30, 0.55);
+}
+
+.hd__fancy-t {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--ice);
+}
+
+.hd__fancy-s {
+  display: block;
+  margin-top: 7px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--text-dim);
+}
+
+@media (max-width: 560px) {
+  .hd__fancy { padding: 13px 15px; }
+  .hd__fancy-t { font-size: 14px; }
+  .hd__fancy-s { font-size: 11.5px; }
+}
+
+.card { color: inherit; text-decoration: none; }
+.card:focus-visible { outline: 2px solid var(--ice, #7fe3ff); outline-offset: 4px; }

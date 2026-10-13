@@ -1,0 +1,204 @@
+Browser tab: 2, Title: "DiscoverCOSMOS 浏览器回归检查", URL: "http://127.0.0.1:8040/solar/render-check.html".
+0 AXWebArea DiscoverCOSMOS 浏览器回归检查, URL: 127.0.0.1:8040/solar/render-check.html
+	1 heading 浏览器回归检查, Value: 1
+		2 text 浏览器回归检查
+	3 text PASS：48/48 项浏览器检查通过；0 项失败。
+	4 text Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36
+	5 link Description: 下载检查结果 JSON, ID: download-result
+		6 text 下载检查结果 JSON
+	7 content list results
+		8 container
+			9 AXListMarker 1. 
+			10 text PASS β=0 GPU 世界方向 (128,128)
+		11 container
+			12 AXListMarker 2. 
+			13 text PASS β=0 GPU 世界方向 (16,16)
+		14 container
+			15 AXListMarker 3. 
+			16 text PASS β=0 GPU 世界方向 (239,239)
+		17 container
+			18 AXListMarker 4. 
+			19 text PASS 关闭相对论与 β=0 逐像素一致
+		20 container
+			21 AXListMarker 5. 
+			22 text PASS 旋转相机后仍采样正确世界方向
+		23 container
+			24 AXListMarker 6. 
+			25 text PASS 前向 β=0.6 蓝移增亮，没有反成后向红移
+		26 container
+			27 AXListMarker 7. 
+			28 text PASS GPU 完整逆 boost，运动轴 0,0,-1，像素 (16,32)
+		29 container
+			30 AXListMarker 8. 
+			31 text PASS GPU 完整逆 boost，运动轴 0,0,-1，像素 (128,128)
+		32 container
+			33 AXListMarker 9. 
+			34 text PASS GPU 完整逆 boost，运动轴 0,0,-1，像素 (239,220)
+		35 container
+			36 AXListMarker 10. 
+			37 text PASS GPU 完整逆 boost，运动轴 1,2,-3，像素 (16,32)
+		38 container
+			39 AXListMarker 11. 
+			40 text PASS GPU 完整逆 boost，运动轴 1,2,-3，像素 (128,128)
+		41 container
+			42 AXListMarker 12. 
+			43 text PASS GPU 完整逆 boost，运动轴 1,2,-3，像素 (239,220)
+		44 container
+			45 AXListMarker 13. 
+			46 text PASS 后向 β=0.6 红移变暗
+		47 container
+			48 AXListMarker 14. 
+			49 text PASS 实际 Scene pass 背景透明、实体不透明
+		50 container
+			51 AXListMarker 15. 
+			52 text PASS 有限距离实体在 β=0.98 仍可辨认
+		53 container
+			54 AXListMarker 16. 
+			55 text PASS 真实 shader 与 framebuffer 无 WebGL 错误
+		56 container
+			57 AXListMarker 17. 
+			58 text PASS 实际 HUD 一程参考下限为 37.29 分钟
+		59 container
+			60 AXListMarker 18. 
+			61 text PASS 实际页面星空立方体包含非零像素
+		62 container
+			63 AXListMarker 19. 
+			64 text PASS 实际页面主场景包含实体
+		65 container
+			66 AXListMarker 20. 
+			67 text PASS mercury 抵达后居中、画面占比约 25%
+		68 container
+			69 AXListMarker 21. 
+			70 text PASS mercury 飞行与环绕交接连续
+		71 container
+			72 AXListMarker 22. 
+			73 text PASS mercury 抵达与停留持续渲染
+		74 container
+			75 AXListMarker 23. 
+			76 text PASS venus 抵达后居中、画面占比约 25%
+		77 container
+			78 AXListMarker 24. 
+			79 text PASS venus 飞行与环绕交接连续
+		80 container
+			81 AXListMarker 25. 
+			82 text PASS venus 抵达与停留持续渲染
+		83 container
+			84 AXListMarker 26. 
+			85 text PASS earth 抵达后居中、画面占比约 25%
+		86 container
+			87 AXListMarker 27. 
+			88 text PASS earth 飞行与环绕交接连续
+		89 container
+			90 AXListMarker 28. 
+			91 text PASS earth 抵达与停留持续渲染
+		92 container
+			93 AXListMarker 29. 
+			94 text PASS mars 抵达后居中、画面占比约 25%
+		95 container
+			96 AXListMarker 30. 
+			97 text PASS mars 飞行与环绕交接连续
+		98 container
+			99 AXListMarker 31. 
+			100 text PASS mars 抵达与停留持续渲染
+		101 container
+			102 AXListMarker 32. 
+			103 text PASS jupiter 抵达后居中、画面占比约 25%
+		104 container
+			105 AXListMarker 33. 
+			106 text PASS jupiter 飞行与环绕交接连续
+		107 container
+			108 AXListMarker 34. 
+			109 text PASS jupiter 抵达与停留持续渲染
+		110 container
+			111 AXListMarker 35. 
+			112 text PASS saturn 抵达后居中、画面占比约 25%
+		113 container
+			114 AXListMarker 36. 
+			115 text PASS saturn 飞行与环绕交接连续
+		116 container
+			117 AXListMarker 37. 
+			118 text PASS saturn 抵达与停留持续渲染
+		119 container
+			120 AXListMarker 38. 
+			121 text PASS uranus 抵达后居中、画面占比约 25%
+		122 container
+			123 AXListMarker 39. 
+			124 text PASS uranus 飞行与环绕交接连续
+		125 container
+			126 AXListMarker 40. 
+			127 text PASS uranus 抵达与停留持续渲染
+		128 container
+			129 AXListMarker 41. 
+			130 text PASS neptune 抵达后居中、画面占比约 25%
+		131 container
+			132 AXListMarker 42. 
+			133 text PASS neptune 飞行与环绕交接连续
+		134 container
+			135 AXListMarker 43. 
+			136 text PASS neptune 抵达与停留持续渲染
+		137 container
+			138 AXListMarker 44. 
+			139 text PASS 飞行中 Esc 返回俯瞰并清零 HUD
+		140 container
+			141 AXListMarker 45. 
+			142 text PASS 修改距离尺度后轨道重建、状态可用
+		143 container
+			144 AXListMarker 46. 
+			145 text PASS 八张卡牌完成烘焙
+		146 container
+			147 AXListMarker 47. 
+			148 text PASS 深链接正确展示地球阅读页
+		149 container
+			150 AXListMarker 48. 
+			151 text PASS 深链接返回按钮留在图鉴首页
+	152 container
+		153 link Description: 太阳系页面, Value: 127.0.0.1:8040/solar/index.html
+		154 text  · 
+		155 link Description: 星际图鉴, Value: 127.0.0.1:8040/index.html
+	156 image check-canvas
+	157 container Description: 太阳系回归场景, ID: app
+		158 AXWebArea 太阳系 · 相对论飞行 — 星际探索局, URL: 127.0.0.1:8040/solar/index.html?test=1&rt=byte
+			159 container
+				160 image gl
+				161 container labels
+					162 checkbox Description: 飞抵水星, Value: 0
+					163 checkbox Description: 飞抵金星, Value: 0
+					164 checkbox Description: 飞抵地球, Value: 0
+					165 checkbox Description: 飞抵火星, Value: 0
+					166 checkbox Description: 飞抵木星, Value: 0
+					167 checkbox Description: 飞抵土星, Value: 0
+				168 link Description: ← 返回星际图鉴, Value: 127.0.0.1:8040/index.html
+				169 text 太阳系 · 相对论飞行
+				170 container hud
+					171 text β
+					172 text 0.0000
+					173 text γ
+					174 text 1.000
+					175 text 演示 Δτ
+					176 text 0.0 s
+					177 text 前向蓝移
+					178 text 1.000×
+					179 text β 为演示参数；Δτ 为演示积分。参考显示距离 4.4836 AU，光速下限 37.29 分钟。
+					180 button 参数面板 (H), ID: btn-more
+	181 container Description: 卡牌图鉴回归场景, ID: cards
+		182 AXWebArea 星际探索局 · 星际图鉴, URL: 127.0.0.1:8040/index.html#/
+			183 container
+				184 text 科普演示 ·  程序化行星插画  · 距离与尺寸采用教学显示比例
+			185 container view-index
+				186 container
+					187 text SOLAR SYSTEM
+					188 heading 星际探索局, Value: 1
+						189 text 星际探索局
+					190 text 八大行星的探索起点。点开任意一张卡牌，看看它离太阳多远、有多大，以及它藏着什么秘密。
+					191 link Description: 进入太阳系 · 相对论飞行 → 三维太阳系，参考开普勒轨道并压缩显示尺度；点选行星后连续飞抵，体验星空的光行差与多普勒, Value: 127.0.0.1:8040/solar/index.html
+				192 container grid
+					193 link Description: NO.01 水星 MERCURY 离太阳最近、跑得最快的行星, Value: 127.0.0.1:8040/index.html#/p/mercury
+					194 link Description: NO.02 金星 VENUS 太阳系最热的行星，也是夜空中最亮的行星, Value: 127.0.0.1:8040/index.html#/p/venus
+					195 link Description: NO.03 地球 EARTH 目前已知唯一有生命的蓝色星球, Value: 127.0.0.1:8040/index.html#/p/earth
+					196 link Description: NO.04 火星 MARS 红色的沙漠世界，人类最想登陆的行星, Value: 127.0.0.1:8040/index.html#/p/mars
+					197 link Description: NO.05 木星 JUPITER 太阳系最大的行星，一个巨大的气态球, Value: 127.0.0.1:8040/index.html#/p/jupiter
+					198 link Description: NO.06 土星 SATURN 戴着光环的宝石，太阳系最上镜的行星, Value: 127.0.0.1:8040/index.html#/p/saturn
+					199 link Description: NO.07 天王星 URANUS 躺着自转的冰蓝色行星, Value: 127.0.0.1:8040/index.html#/p/uranus
+					200 link Description: NO.08 海王星 NEPTUNE 最遥远的深蓝行星，风速快得吓人, Value: 127.0.0.1:8040/index.html#/p/neptune
+
+The focused UI element is 5 link Description: 下载检查结果 JSON, ID: download-result

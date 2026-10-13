@@ -1,0 +1,25 @@
+═══ 语法检查 ═══
+  OK  scripts/serve.mjs
+  OK  code/app.js
+  OK  code/planet-visuals.js
+  OK  code/planets.js
+  OK  code/three-loader.js
+  OK  code/project.check.mjs
+  OK  code/solar/rel.js
+  OK  code/solar/render-check.js
+  OK  code/solar/rendering.js
+  OK  code/solar/shaders.js
+  OK  code/solar/solar-app.js
+  OK  code/solar/solarsystem.js
+  OK  code/solar/orbit.test.mjs
+  OK  code/solar/rel.test.mjs
+  OK  code/solar/shader.check.mjs
+
+═══ 测试套件 ═══
+  PASS  code/solar/rel.test.mjs (180 项断言)
+  PASS  code/solar/orbit.test.mjs (233 项断言)
+  PASS  code/solar/shader.check.mjs (164 项断言)
+  PASS  code/project.check.mjs (84 项断言)
+
+全部通过（661 项断言）。
+浏览器检查单独执行：启动 HTTP 服务后打开 /solar/render-check.html。
