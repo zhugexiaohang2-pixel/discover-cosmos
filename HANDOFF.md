@@ -19,7 +19,7 @@ DiscoverCOSMOS，中文名“星际探索局”，是面向青少年的静态科
 
 ## 2. 当前交付状态
 
-打包时没有本目录的 Git 历史、GitHub remote 或已启用的 GitHub Actions。发布模板保存在 [templates/pages.yml](templates/pages.yml)，尚未复制到 .github/workflows，因此不会自行触发部署。
+打包时没有本目录的 Git 历史、GitHub remote 或已启用的 GitHub Actions。2026-10-13 接手已建立本地基线并绑定用户确认的公开仓库；发布模板已复制到 .github/workflows。推送与远端发布状态见 [GitHub 发布与维护](docs/08-GitHub发布与维护.md)。
 
 当前代码与打包前可运行版本保持一致。三个核心数值套件共 577 项断言；原版本离线检查合计 634 项，真实浏览器回归 48 项通过。交付包因文档与资源链接增加，会重新产生自己的离线检查总数，以 [验证报告](docs/03-验证报告.md) 和实际输出为准。
 
@@ -185,7 +185,7 @@ cp templates/pages.yml .github/workflows/pages.yml
 
 模板分三段：verify 运行离线检查；build 在 main 上上传 code 目录；deploy 等待 build 完成后发布。PR 只检查，不发布；非 main 手动运行也不发布。
 
-模板使用 Node.js 24 运行检查，没有 npm ci，因为项目没有安装依赖。它使用 GitHub 官方 actions 的已核对主版本，但模板未在远端运行过。接手时核对版本和运行环境，不要把“模板可解析”当作“部署成功”。
+模板使用 Node.js 24 运行检查，没有 npm ci，因为项目没有安装依赖。2026-10-13 已核对 GitHub 官方发布元数据：checkout/setup-node v7、configure-pages v6、upload-pages-artifact/deploy-pages v5，均保留当前输入契约；模板未在远端运行过。不要把“模板可解析”当作“部署成功”。
 
 默认发布分支为 main。如果用户或远端默认分支不同，须同时修改 push 分支与 build/deploy 中的 refs/heads/main 判断，并检查 Pages 环境规则。
 
